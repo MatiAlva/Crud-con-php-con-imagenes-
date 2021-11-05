@@ -1,0 +1,210 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('../img/fondopc.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 0;
+	height: 100vh;
+}
+
+header {
+	background: linear-gradient(
+		45deg,
+		rgb(1, 63, 55),
+		rgb(2, 118, 153),
+		rgb(1, 63, 55),
+		rgb(10, 122, 156)
+	);
+	background-size: 400% 400%;
+	animation: cambiar 4s ease infinite;
+}
+
+@keyframes cambiar {
+	0% {
+		background-position: 0 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0 50%;
+	}
+} /*Efecto header*/
+
+header h1 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 10px;
+	border-bottom: solid 3px rgb(219, 157, 0);
+}
+
+header .info {
+	text-decoration: none;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: rgb(219, 157, 0);
+	border: solid 3px black;
+	padding: 5px;
+}
+
+form {
+	margin-top: 15px;
+	margin-bottom: 20px;
+	width: 25%;
+	background: rgba(1, 63, 55, 0.8);
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: solid 5px rgb(219, 157, 0);
+}
+
+form h1 {
+	font-family: unset;
+	color: white;
+	padding: 20px;
+}
+
+form input {
+	margin-bottom: 20px;
+	padding: 3px;
+	border: solid 2px rgb(219, 157, 0);
+}
+
+form .color {
+	padding: 0px;
+}
+
+form h3 {
+	font-family: monospace;
+	color: white;
+}
+
+.enviar {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: rgb(219, 157, 0);
+	border: solid 3px black;
+	padding: 5px;
+}
+
+table {
+	position: static;
+	background-color: rgba(1, 63, 55, 0.8);
+	border: solid 5px rgb(219, 157, 0);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+table th {
+	color: white;
+	font-family: monospace;
+	font-size: 13px;
+	padding: 10px;
+}
+
+.imagen-th {
+	width: 40px;
+}
+
+.editar {
+	color: rgb(219, 157, 0);
+	text-decoration: none;
+	font-family: monospace;
+}
+
+.eliminar {
+	color: rgb(219, 157, 0);
+	text-decoration: none;
+	font-family: monospace;
+}
+
+footer {
+	position: relative;
+	bottom: 0;
+	background-color: rgba(1, 63, 55, 0.8);
+	margin-top: 15px;
+	height: auto;
+	width: 100%;
+}
+
+footer h1 {
+	color: rgb(219, 157, 0);
+	font-family: monospace;
+	font-size: 15px;
+	text-align: center;
+	padding: 25px;
+}
+
+.modificar {
+	position: absolute;
+	width: 25%;
+	top: 11%;
+	left: 40%;
+	background: rgba(1, 63, 55, 0.8);
+	margin-left: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: solid 5px rgb(219, 157, 0);
+}
+
+/*No funciona el responsive*/
+
+/* @media screen and (max-width: 550px) {
+	form {
+		margin-bottom: 400px;
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	form h1 {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 1168px) {
+	form {
+		margin-left: 50px;
+		width: 40%;
+	}
+
+	.modificar {
+		left: 48%;
+		top: 5%;
+		width: 40%;
+	}
+
+	table {
+		position: absolute;
+		left: 30px;
+		margin: auto;
+		margin-top: 30px;
+		width: 95%;
+		background-color: rgba(1, 63, 55, 0.8);
+		border: solid 5px rgb(219, 157, 0);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	form input {
+		padding: 20px;
+	}
+} */

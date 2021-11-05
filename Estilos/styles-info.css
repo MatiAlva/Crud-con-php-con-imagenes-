@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('../img/fondopc.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 0;
+	height: 100vh;
+}
+
+header {
+	background: linear-gradient(
+		45deg,
+		rgb(1, 63, 55),
+		rgb(2, 118, 153),
+		rgb(1, 63, 55),
+		rgb(10, 122, 156)
+	);
+	background-size: 400% 400%;
+	animation: cambiar 4s ease infinite;
+}
+
+@keyframes cambiar {
+	0% {
+		background-position: 0 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0 50%;
+	}
+}
+
+header h1 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 10px;
+	border-bottom: solid 3px rgb(219, 157, 0);
+}
+
+footer {
+	position: relative;
+	bottom: 0;
+	background-color: rgba(1, 63, 55, 0.8);
+	margin-top: 15px;
+	height: auto;
+	width: 100%;
+}
+
+footer h1 {
+	color: rgb(219, 157, 0);
+	font-family: monospace;
+	font-size: 15px;
+	text-align: center;
+	padding: 25px;
+}
