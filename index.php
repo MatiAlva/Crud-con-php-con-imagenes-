@@ -20,7 +20,7 @@ $conexion = mysqli_connect("localhost", "root", "", "crud") or die("Error de con
                     <h3> Ingrese el color: </h3>
                     <input type="color" name="color" placeholder="Color" class="color" />
                     <input type="text" name="patente" placeholder="Patente" required/>
-                    <h3> Año de su compra: </h3>
+                    <h3> Mes y Año de su compra: </h3>
                     <input type="month" name="año" placeholder="Año" required/>
                     <input type="int" name="km" placeholder="Kilometros recorridos" required/>
                     <input type="file" name="foto" acept="imagen/" required/>
@@ -89,7 +89,7 @@ if(isset($_GET['id_editar'])){
         <h3> Ingrese el color: </h3>
         <input type="color" name="Color" placeholder="Ingrese el color" value ="'.$reg_editar['color'].'" />
         <input type="int" name="Patente" placeholder="Ingrese la patente" value ="'.$reg_editar['patente'].'" />
-        <input type="date" name="Año" placeholder="Ingrese el año de la compra" value ="'.$reg_editar['anio'].'" />
+        <input type="month" name="Año" placeholder="Ingrese el año de la compra" value ="'.$reg_editar['anio'].'" />
         <input type="int" name="KM" placeholder="Ingrese los Kilometros" value ="'.$reg_editar['km'].'" />
         <input type="file" name="foto" acept="imagen/" />       
         <input type="submit" name="modificar" value="Modificar Datos" class="enviar"/>
@@ -133,13 +133,13 @@ $consulta = mysqli_query($conexion, $sql);
             <table class="table">
                     <tr>
                       
-                        <th>Marca_auto</th>
-                        <th>Modelo_auto</th>
-                        <th>Color_auto</th>
-                        <th>Patente_auto</th>
-                        <th>Año_auto</th>
-                        <th>Km_auto</th>
-                        <th>Img_auto</th>
+                        <th> Marca_vehiculo </th>
+                        <th> Modelo_vehiculo </th>
+                        <th> Color_vehiculo </th>
+                        <th> Patente_vehiculo </th>
+                        <th> Año y Mes_vehiculo </th>
+                        <th> Km_vehiculo </th>
+                        <th> Imgagen_vehiculo </th>
                     </tr>
 
                     <tr> 
