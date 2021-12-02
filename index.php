@@ -1,8 +1,5 @@
 <?php
-$conexion = mysqli_connect('bgsuovkff6odz1m5ypl9-mysql.services.clever-cloud.com',
-                           'upvnsuflgynjioof',
-                            'P4WZNXyL5z1zdEDwxv2K', 
-                           'bgsuovkff6odz1m5ypl9') or die("ror de conexion
+$conexion = mysqli_connect("localhost", "root", "", "crud") or die("ror de conexion
 ?>
 <!DOCTYPE html>
 <html lang="en">
